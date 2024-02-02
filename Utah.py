@@ -1,2 +1,2 @@
 def test_func():
-    print("Hello, World!")
+    print("No, no no, I hate the 'Hello, World!' thing.")
