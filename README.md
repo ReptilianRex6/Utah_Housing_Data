@@ -36,9 +36,9 @@ To test our hypothesis the analysis will answer:
 ## Data Sources
 
 The data used in this analysis will be obtained from:
-[Fannie Mae](#https://developer.fanniemae.com/#/home)
-[Federal Reserve Economic Data (FRED)](#https://fred.stlouisfed.org/)
-[U.S. Census Bureau](#https://api.census.gov/)
+- [Fannie Mae](https://developer.fanniemae.com/#/home)
+- [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/)
+- [U.S. Census Bureau](https://api.census.gov/)
 
 ## Methodology
 
