@@ -1,61 +1,109 @@
-# Utah_Housing_Data
-##This project is a collaboration between Zac Baxter, Ethan Bennett, Ryan Mosher, Stephen Singletary, and Nathan Tyler as part of University of Utah's AI Bootcamp
+# Utah Housing Data Analysis
 
-Below is the grading rubric for this assignment.
+   ### CONTENTS
+**[Analysis Team](#analysis-team)**<br>
+**[Hypothesis and Questions](#hypothesis-and-questions)**<br>
+**[Data Sources](#data-sources)**<br>
+**[Methodology](#methodology)**<br>
+**[Repository Assets](#repository-assets)**<br>
+**[Findings/Conclusion](#findingsconclusion)**<br>
+**[Rubric Checklist](#rubric-checklist)**<br>
 
-Requirements
-Software Version Control (10 points)
+## Analysis Team
 
-    Repository is created on GitHub (2 points).
+This analysis of Utah housing data is the collective work of the following team members as part of University of Utah's AI Bootcamp by edX:
+- Zac Baxter, 
+- Ethan Bennett, 
+- Ryan Mosher, 
+- Stephen Singletary, *a tech enthusiast reskilling to break into data analysis*
+- Nathan Tyler, *a well-rounded computer specialist*
 
-    Files are frequently committed to the repository (3 points).
+## Hypothesis and Questions
 
-    Commit messages include an appropriate level of detail (2 points).
+### Hypothesis
 
-    Repository is organized and includes relevant information and project files (3 points).
+We believe that the average price of a home in Utah has risen significantly over time due to a combination of rising incomes, population growth, and recent interest rate hikes.
 
-Documentation (10 points)
+### Questions
 
-    Code is well commented with concise, relevant notes (3 points).
+To test our hypothesis the analysis will answer:
+1. What is the average price of a home in Utah over time?
+2. What is the average income in Utah over time?
+3. What is the population of Utah over time?
+4. How has the Federal interest rate changed over time?
+5. What is the relationship between the average price of a home, average income, interest rates, and population?
 
-    GitHub README file includes a concise project overview (2 points).
+## Data Sources
 
-    GitHub README file includes detailed usage and installation instructions (2 points).
+The data used in this analysis will be obtained from:
+- [Fannie Mae](https://developer.fanniemae.com/#/home)
+- [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/)
+- [U.S. Census Bureau](https://api.census.gov/)
 
-    GitHub README includes either examples of the application, or the results and a summary of the analysis (3 points).
+## Methodology
 
-Analysis and Conclusion (30 points)
+Utilizing modern data analysis tools offered in the Python* programming language, a Jupyter Notebook (.ipynb) will contain the code to read, clean, organize, and plot the data. The source code file can be run in Jupyter, Jupyter Lab, VS Code with Jupyter Extensions, or Google Colaboratory.
 
-    Findings are strongly supported with numbers and visualizations (10 points).
+*The Python environment should be setup to include:
+- Python 3.10
+- Pandas
+- Matplotlib
+- Scipy
 
-    Write-up summarizes major findings and implications at a professional level (10 points).
+The analysis will be summarized below in the **[Findings](#findings)** section and a final presentation will be put together using Microsoft PowerPoint.
 
-    Each question in the project proposal is answered with precise descriptions and findings (5 points).
+## Repository Assets
 
-    Each question response is supported with a well-discerned statistical analysis from lessons, such as aggregation, correlation, comparison, summary statistics, sentiment analysis, and time series analysis (5 points).
+### Source Code
 
-Visualizations (20 points)
+- utah_housing_analysis.ipynb
 
-    6–8 visualizations of data (at least two per question) (10 points).
 
-    Clear and accurate labeling of images (5 points).
+### Resources
 
-    Visualizations supported with ample and precise explanation (5 points).
+- DECENNIALPL2020.P1-2024-02-02T043549.csv[^1]
 
-Presentation Requirements (30 points)
+[^1]: Obtained from the U.S. Census Bureau
 
-Your presentation should cover the following:
 
-    An executive summary or overview of the project and project goals (5 points).
+## Findings/Conclusion
 
-    An overview of the data collection, cleanup, and exploration processes (5 points).
 
-    The approach that your group took in achieving the project goals (5 points).
+## Rubric Checklist
 
-    Any additional questions that surfaced, what your group might research next if more time was available, or share a plan for future development (5 points).
+### Software Version Control
 
-    The results and conclusions of the application or analysis (5 points).
+- [x] Repository is created on GitHub
+- [ ] Files are frequently committed to the repository
+- [ ] Commit messages include an appropriate level of detail
+- [ ] Repository is organized and includes relevant information and project files
 
-    Slides effectively demonstrate the project (3 points).
+### Documentation
 
-    Slides are visually clean and professional (2 points).
+- [ ] Code is well commented with concise, relevant notes
+- [ ] GitHub README file includes a concise project overview
+- [ ] GitHub README file includes detailed usage and installation instructions
+- [ ] GitHub README includes either examples of the application, or the results and a summary of the analysis
+
+### Analysis and Conclusion
+
+- [ ] Findings are strongly supported with numbers and visualizations
+- [ ] Write-up summarizes major findings and implications at a professional level
+- [ ] Each question in the project proposal is answered with precise descriptions and findings
+- [ ]  Each question response is supported with a well-discerned statistical analysis from lessons, such as aggregation, correlation, comparison, summary statistics, sentiment analysis, and time series analysis
+
+### Visualizations
+
+- [ ] 6–8 visualizations of data (at least two per question)
+- [ ] Clear and accurate labeling of images
+- [ ] Visualizations supported with ample and precise explanation
+
+### Presentation
+
+- [ ] An executive summary or overview of the project and project goals
+- [ ] An overview of the data collection, cleanup, and exploration processes
+- [ ] The approach that your group took in achieving the project goals
+- [ ] Any additional questions that surfaced, what your group might research next if more time was available, or share a plan for future development
+- [ ] The results and conclusions of the application or analysis
+- [ ] Slides effectively demonstrate the project
+- [ ] Slides are visually clean and professional
