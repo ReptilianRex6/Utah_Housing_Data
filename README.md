@@ -1,7 +1,7 @@
 # Utah Housing Data Analysis
 
    ### CONTENTS
-**[Analysis Team](#analysis-tam)**<br>
+**[Analysis Team](#analysis-team)**<br>
 **[Hypothesis and Questions](#hypothesis-and-questions)**<br>
 **[Data Sources](#data-sources)**<br>
 **[Methodology](#methodology)**<br>
@@ -15,7 +15,7 @@ This analysis of Utah housing data is the collective work of the following team 
 - Zac Baxter, 
 - Ethan Bennett, 
 - Ryan Mosher, 
-- Stephen Singletary, 
+- Stephen Singletary, *a tech enthusiast reskilling to break into data analysis*
 - Nathan Tyler, *a well-rounded computer specialist*
 
 ## Hypothesis and Questions
