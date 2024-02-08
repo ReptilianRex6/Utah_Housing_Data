@@ -1,4 +1,5 @@
 def test_func():
+<<<<<<< HEAD
     print("Hello, World!")
 
 import pandas as pd
@@ -10,3 +11,6 @@ print(df_HPI.head())
 
 
 
+=======
+    print("No, no no, I hate the 'Hello, World!' thing.")
+>>>>>>> origin/main
