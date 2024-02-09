@@ -16,6 +16,8 @@ median_house_price_df = pd.read_csv(median_house_price_path, parse_dates=True)
 median_house_price_df.columns = ["Date", "Home Prices"]
 # simplify price column to thousands
 median_house_price_df["Home Prices"] = round(median_house_price_df["Home Prices"]/1000, 2)
+# ensure date time (didn't seem to work with parsing on read csv)
+median_house_price_df["Date"] = pd.to_datetime(median_house_price_df["Date"])
 # set date as index
 median_house_price_df = median_house_price_df.set_index("Date")
 
@@ -30,8 +32,7 @@ med_house_ax.plot(median_house_price_df.index,
 med_house_ax.set_title("Median Home Prices in Utah 2000-2023")
 med_house_ax.set_xlabel("Monthly")
 med_house_ax.set_ylabel("Home Prices in Thousands")
-med_house_ax.xaxis.set_major_locator(mdates.YearLocator(1,month=1,day=1))
+med_house_ax.xaxis.set_major_locator(mdates.YearLocator(2))
 med_house_ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y"))
 med_house_ax.legend()
-plt.autoscale(tight=True)
 plt.savefig(Path("Output/Median_Home_Price_Increase.png"))
