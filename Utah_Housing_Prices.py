@@ -30,7 +30,7 @@ med_house_ax.plot(median_house_price_df.index,
          median_house_price_df["Home Prices"],
          color="darkgreen",  label="Home Prices in Thousands")
 med_house_ax.set_title("Median Home Prices in Utah 2000-2023")
-med_house_ax.set_xlabel("Monthly")
+med_house_ax.set_xlabel("Data Granularity: Monthly")
 med_house_ax.set_ylabel("Home Prices in Thousands")
 med_house_ax.xaxis.set_major_locator(mdates.YearLocator(2))
 med_house_ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y"))
