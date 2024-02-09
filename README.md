@@ -12,9 +12,9 @@
 ## Analysis Team
 
 This analysis of Utah housing data is the collective work of the following team members as part of University of Utah's AI Bootcamp by edX:
-- Zac Baxter, 
-- Ethan Bennett, 
-- Ryan Mosher, 
+- Zac Baxter, *talent acquisition*
+- Ethan Bennett, *machinist and computer enthusiast*
+- Ryan Mosher, *mortgage and bond specialist*
 - Stephen Singletary, *a tech enthusiast reskilling to break into data analysis*
 - Nathan Tyler, *a well-rounded computer specialist*
 
@@ -30,7 +30,7 @@ To test our hypothesis the analysis will answer:
 1. What is the average price of a home in Utah over time?
 2. What is the average income in Utah over time?
 3. What is the population of Utah over time?
-4. How has the Federal interest rate changed over time?
+4. How have mortgage interest rates in Utah changed over time?
 5. What is the relationship between the average price of a home, average income, interest rates, and population?
 
 ## Data Sources
@@ -42,7 +42,7 @@ The data used in this analysis will be obtained from:
 
 ## Methodology
 
-Utilizing modern data analysis tools offered in the Python* programming language, a Jupyter Notebook (.ipynb) will contain the code to read, clean, organize, and plot the data. The source code file can be run in Jupyter, Jupyter Lab, VS Code with Jupyter Extensions, or Google Colaboratory.
+Utilizing modern data analysis tools offered in the Python* programming language, a Python script (.py) will contain the code to read, clean, organize, and plot the data. The source code file can be run from a terminal. Plots will be saved to an Output folder as .png files, to be used in a formal presentation.
 
 *The Python environment should be setup to include:
 - Python 3.10
@@ -56,7 +56,7 @@ The analysis will be summarized below in the **[Findings](#findings)** section a
 
 ### Source Code
 
-- utah_housing_analysis.ipynb
+- utah_housing_analysis.py
 
 
 ### Resources
