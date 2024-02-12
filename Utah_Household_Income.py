@@ -23,7 +23,7 @@ median_income_df = median_income_df[-23:]
 
 # make a monthly version using interpolation
 # start with setting the new dataframe date range monthly
-monthly_median_income_df = pd.DataFrame(pd.date_range(start='1/1/2000', end='12/1/2022', freq='MS'))
+monthly_median_income_df = pd.DataFrame(pd.date_range(start='1/1/2000', end='1/1/2022', freq='MS'))
 monthly_median_income_df.columns = ["Date"]
 
 # merge the annual dataframe
@@ -33,13 +33,13 @@ monthly_median_income_df = monthly_median_income_df.merge(median_income_df, how=
 monthly_median_income_df = monthly_median_income_df.set_index("Date")
 
 # interpolate data to fill in all NaN
-monthly_median_income_df = monthly_median_income_df.interpolate()
+monthly_median_income_df = monthly_median_income_df.interpolate().round(2)
 
 ## I like Matplot for a more polished look
 med_income_fig, med_income_ax = plt.subplots(figsize=(12, 6))
 med_income_ax.plot(monthly_median_income_df.index,
          monthly_median_income_df["Household Income"],
-         color="darkgreen",  label="Household Income")
+         color="darkorange",  label="Household Income")
 med_income_ax.set_title("Median Household Income in Utah 2000-2022")
 med_income_ax.set_xlabel("Data Granularity: Monthly (Annual Interpolated)")
 med_income_ax.set_ylabel("Household Income in Thousands")
