@@ -74,28 +74,28 @@ The analysis will be summarized below in the **[Findings](#findings)** section a
 ### Software Version Control
 
 - [x] Repository is created on GitHub
-- [ ] Files are frequently committed to the repository
-- [ ] Commit messages include an appropriate level of detail
+- [x] Files are frequently committed to the repository
+- [x] Commit messages include an appropriate level of detail
 - [ ] Repository is organized and includes relevant information and project files
 
 ### Documentation
 
 - [ ] Code is well commented with concise, relevant notes
-- [ ] GitHub README file includes a concise project overview
+- [x] GitHub README file includes a concise project overview
 - [ ] GitHub README file includes detailed usage and installation instructions
 - [ ] GitHub README includes either examples of the application, or the results and a summary of the analysis
 
 ### Analysis and Conclusion
 
-- [ ] Findings are strongly supported with numbers and visualizations
+- [x] Findings are strongly supported with numbers and visualizations
 - [ ] Write-up summarizes major findings and implications at a professional level
 - [ ] Each question in the project proposal is answered with precise descriptions and findings
 - [ ]  Each question response is supported with a well-discerned statistical analysis from lessons, such as aggregation, correlation, comparison, summary statistics, sentiment analysis, and time series analysis
 
 ### Visualizations
 
-- [ ] 6–8 visualizations of data (at least two per question)
-- [ ] Clear and accurate labeling of images
+- [x] 6–8 visualizations of data (at least two per question)
+- [x] Clear and accurate labeling of images
 - [ ] Visualizations supported with ample and precise explanation
 
 ### Presentation
