@@ -8,7 +8,7 @@ import matplotlib.dates as mdates
 from pathlib import Path
 
 ## Read im median household income
-median_income_path = Path("Resources/Real Median Household Income.csv")
+median_income_path = Path("Resources/Median Household Income.csv")
 median_income_df = pd.read_csv(median_income_path, parse_dates=True)
 
 # Clean/organize data by:
@@ -47,7 +47,7 @@ med_income_ax.xaxis.set_major_locator(mdates.YearLocator(2))
 med_income_ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y"))
 med_income_ax.legend()
 # and save the plot
-plt.savefig(Path("Output/Median_Household_Income.png"))
+plt.savefig(Path("Presentation Slide References/Median_Household_Income.png"))
 
 # Export organized dataframe
-monthly_median_income_df.to_csv(Path("Usefull Dataframes/Median_Household_Income_Monthly_In_Thousands.csv"))
+monthly_median_income_df.to_csv(Path("Useful Dataframes/Median_Household_Income_Monthly_In_Thousands.csv"))
