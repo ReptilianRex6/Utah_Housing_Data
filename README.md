@@ -7,7 +7,7 @@
 **[Methodology](#methodology)**<br>
 **[Repository Assets](#repository-assets)**<br>
 **[Findings/Conclusion](#findingsconclusion)**<br>
-**[Rubric Checklist](#rubric-checklist)**<br>
+**[Prophet](#prophet)**<br>
 
 ## Analysis Team
 
@@ -22,7 +22,7 @@ This analysis of Utah housing data is the collective work of the following team 
 
 ### Hypothesis
 
-We believe that the average price of a home in Utah has risen significantly over time due to a combination of rising incomes, population growth, and recent interest rate hikes.
+We believe that the average price of a home in Utah has risen significantly over time due to a combination of rising incomes, population growth, and changes in interest rates.
 
 ### Questions
 
@@ -36,74 +36,84 @@ To test our hypothesis the analysis will answer:
 ## Data Sources
 
 The data used in this analysis will be obtained from:
-- [Fannie Mae](https://developer.fanniemae.com/#/home)
 - [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/)
-- [U.S. Census Bureau](https://api.census.gov/)
+- [Neilsberg Research](https://www.neilsberg.com/)
 
 ## Methodology
 
-Utilizing modern data analysis tools offered in the Python* programming language, a Python script (.py) will contain the code to read, clean, organize, and plot the data. The source code file can be run from a terminal. Plots will be saved to an Output folder as .png files, to be used in a formal presentation.
+Utilizing modern data analysis tools offered in the Python* programming language, several Python scripts (.py) and Jupyter Notebooks (.ipynb)  contain the code to that reads, cleans, organizes, and plots the data. These .py files can be run from a terminal or IDE such as VS Code. The notebooks could  be run in Jupyter Lab or VS Code with extensions.
 
 *The Python environment should be setup to include:
 - Python 3.10
 - Pandas
 - Matplotlib
 - Scipy
+- Prophet
 
-The analysis will be summarized below in the **[Findings](#findings)** section and a final presentation will be put together using Microsoft PowerPoint.
+The analysis will be summarized below in the **[Findings](#findings)** section and a final presentation will be put together using using Google Slides (in a PowerPoint format).
 
 ## Repository Assets
 
 ### Source Code
 
-- utah_housing_analysis.py
-
+- Correlations.ipnb
+- Housing_Shortfall.py
+- Income_Correlation.py
+- Permits to pop compare.ipynb
+- Prophecies_workshop.ipynb
+- Prophecy_final_work.py
+- Stephen_Group_Project_Notebook.ipynb
+- Utah_Household_Income.py
+- Utah_Household_Prices.py
 
 ### Resources
 
-- DECENNIALPL2020.P1-2024-02-02T043549.csv[^1]
+- 10-year-treasury-bond-rate-yield-chart.csv
+- Building permits for single family.csv
+- Median Home Pricing.csv
+- Median Household Income.csv
+- Mortgage Rates 30y Fixed.csv
+- Real Median Household Income.csv
+- Resident Population in Utah.csc
+- Utah State House Price Index.csv
+- filled_df.csv
+- Utah population 2000-2022 neilsberg.csv
 
-[^1]: Obtained from the U.S. Census Bureau
+### Other Folders
 
+Additional folders in this repository are storing random working code snippets, cleaned data, and test files which can be ignored.
 
 ## Findings/Conclusion
 
+We found that generally income is strongly correlated with home prices, as income increases home prices increases will lag behind.
 
-## Rubric Checklist
+![Income to Home Price Comparison/Correlation](https://github.com/ReptilianRex6/Utah_Housing_Data/blob/main/Presentation%20Slide%20References/Home_Prices_and_Household_Income_Overlaid.png)
 
-### Software Version Control
+We found a negative correlation between interest rates and home prices. As interest rates fall, home prices rise.
 
-- [x] Repository is created on GitHub
-- [ ] Files are frequently committed to the repository
-- [ ] Commit messages include an appropriate level of detail
-- [ ] Repository is organized and includes relevant information and project files
+![Interest Rates to Home Price Comparison/Correlation](https://github.com/ReptilianRex6/Utah_Housing_Data/blob/main/Presentation%20Slide%20References/best_home_prices_vs_interest_rates_720.png)
 
-### Documentation
+When reviewing building permits vs. population growth we saw the likelihood of a disparity between new construction and population growth.
 
-- [ ] Code is well commented with concise, relevant notes
-- [ ] GitHub README file includes a concise project overview
-- [ ] GitHub README file includes detailed usage and installation instructions
-- [ ] GitHub README includes either examples of the application, or the results and a summary of the analysis
+![Building Permits vs. Population Growth](https://github.com/ReptilianRex6/Utah_Housing_Data/blob/main/Presentation%20Slide%20References/PopulationvsPermits.png)
 
-### Analysis and Conclusion
+This led us to want to calculate just how much of a disparity there was. Given that the average housing unit in Utah houses three persons, we performed a cumulative summation of building permits and population growth. We found that there is a shortfall of new housing about 41,000 since the year 2000.
 
-- [ ] Findings are strongly supported with numbers and visualizations
-- [ ] Write-up summarizes major findings and implications at a professional level
-- [ ] Each question in the project proposal is answered with precise descriptions and findings
-- [ ]  Each question response is supported with a well-discerned statistical analysis from lessons, such as aggregation, correlation, comparison, summary statistics, sentiment analysis, and time series analysis
+In the end we also wanted to look at the raw correlations between all the data points in question.
 
-### Visualizations
+![Correlation_Table](https://github.com/ReptilianRex6/Utah_Housing_Data/blob/main/Presentation%20Slide%20References/Correlation_Table.png)
 
-- [ ] 6–8 visualizations of data (at least two per question)
-- [ ] Clear and accurate labeling of images
-- [ ] Visualizations supported with ample and precise explanation
+From these data points we can answer:
+1. The average price of a home in Utah has increased over time. More significantly in the past few years.
 
-### Presentation
+2. The average income of Utah households has also increased over time.
 
-- [ ] An executive summary or overview of the project and project goals
-- [ ] An overview of the data collection, cleanup, and exploration processes
-- [ ] The approach that your group took in achieving the project goals
-- [ ] Any additional questions that surfaced, what your group might research next if more time was available, or share a plan for future development
-- [ ] The results and conclusions of the application or analysis
-- [ ] Slides effectively demonstrate the project
-- [ ] Slides are visually clean and professional
+3. Utah is a steadily growing state.
+
+4. Mortgage interest rates fluctuate consistently, but moved down for a long time helping drive up the costs of homes.
+
+5. There are strong positive correlations between home prices and income, and building permits issued. There is a medium negative correlation between interest rates and home prices, but a strong correlation between interest rates and building permits.
+
+## Prophet
+
+We also used the Prophet Python package with the data ending in 2022 to predict the future in 2023 and compared it to the real data to see how well Prophet predicts the future.
