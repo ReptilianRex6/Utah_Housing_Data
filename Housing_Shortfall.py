@@ -89,4 +89,4 @@ sos_ax.legend()
 plt.axhline(y=0, color="k", linestyle="-")
 plt.autoscale(tight=True)
 # and save the plot
-plt.savefig(Path("Output/Housing_Shortfall.png"))
+plt.savefig(Path("Presentation Slide References/Housing_Shortfall.png"))
