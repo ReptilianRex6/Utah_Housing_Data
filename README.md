@@ -97,7 +97,9 @@ When reviewing building permits vs. population growth we saw the likelihood of a
 
 ![Building Permits vs. Population Growth](https://github.com/ReptilianRex6/Utah_Housing_Data/blob/main/Presentation%20Slide%20References/PopulationvsPermits.png)
 
-This led us to want to calculate just how much of a disparity there was. Given that the average housing unit in Utah houses three persons, we performed a cumulative summation of building permits and population growth. We found that there is a shortfall of new housing about 41,000 since the year 2000.
+This led us to want to calculate just how much of a disparity there was. Given that the average housing unit in Utah houses three persons, we performed a cumulative summation of building permits and population growth. We found that there is a 41,000 shortfall of new housing units built since the year 2000.
+
+![Housing Surplus or Shortfall](https://github.com/ReptilianRex6/Utah_Housing_Data/blob/main/Presentation%20Slide%20References/Housing_Shortfall.png)
 
 In the end we also wanted to look at the raw correlations between all the data points in question.
 
