@@ -6,9 +6,9 @@ import matplotlib.dates as mdates
 from pathlib import Path
 
 ## Note just starting with pre-cleaned data, could remove this is combined into one file
-median_house_price_path = Path("Usefull Dataframes/Median_Home_Prices_Monthly_In_Thousands.csv")
+median_house_price_path = Path("Useful Dataframes/Median_Home_Prices_Monthly_In_Thousands.csv")
 median_house_price_df = pd.read_csv(median_house_price_path, parse_dates=True)
-monthly_median_income_path = Path("Usefull Dataframes/Median_Household_Income_Monthly_In_Thousands.csv")
+monthly_median_income_path = Path("Useful Dataframes/Median_Household_Income_Monthly_In_Thousands.csv")
 monthly_median_income_df = pd.read_csv(monthly_median_income_path, parse_dates=True)
 # assure dates are correctly set as datestamps
 median_house_price_df["Date"] = pd.to_datetime(median_house_price_df["Date"])
@@ -46,7 +46,7 @@ lines1, labels1 = price_vs_income_axa.get_legend_handles_labels()
 lines2, labels2 = price_vs_income_axb.get_legend_handles_labels()
 price_vs_income_axa.legend(lines1 + lines2, labels1 + labels2)
 # and save plot
-plt.savefig(Path("Output/Home_Prices_and_Household_Income_Overlaid.png"))
+plt.savefig(Path("Presentation Slide References/Home_Prices_and_Household_Income_Overlaid.png"))
 
 # And a scatter plot with regression line
 price_vs_income_fig2, price_vs_income_ax2 = plt.subplots(figsize=(12, 6))
@@ -70,4 +70,4 @@ Slope: {slope}
 Y-Intercept: {yinter}
 """
 price_vs_income_fig2.text(0.5, 0.70, pvi_corr_text, ha="center", color="darkgreen")
-plt.savefig(Path("Output/Correlation_of_Home_Prices_to_Household_Income.png"))
+plt.savefig(Path("Presentation Slide References/Correlation_of_Home_Prices_to_Household_Income.png"))
