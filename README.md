@@ -101,7 +101,7 @@ This led us to want to calculate just how much of a disparity there was. Given t
 
 ![Housing Surplus or Shortfall](https://github.com/ReptilianRex6/Utah_Housing_Data/blob/main/Presentation%20Slide%20References/Housing_Shortfall.png)
 
-
+In the end we also wanted to look at the raw correlations between all the data points in question.
 
 ![Correlation_Table](https://github.com/ReptilianRex6/Utah_Housing_Data/blob/main/Presentation%20Slide%20References/Correlation_Table.png)
 
