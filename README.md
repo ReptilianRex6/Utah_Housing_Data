@@ -101,20 +101,19 @@ This led us to want to calculate just how much of a disparity there was. Given t
 
 ![Housing Surplus or Shortfall](https://github.com/ReptilianRex6/Utah_Housing_Data/blob/main/Presentation%20Slide%20References/Housing_Shortfall.png)
 
-In the end we also wanted to look at the raw correlations between all the data points in question.
+
 
 ![Correlation_Table](https://github.com/ReptilianRex6/Utah_Housing_Data/blob/main/Presentation%20Slide%20References/Correlation_Table.png)
 
-From these data points we can answer:
-1. The average price of a home in Utah has increased over time. More significantly in the past few years.
+
 
 2. The average income of Utah households has also increased over time.
 
-3. Utah is a steadily growing state.
+
 
 4. Mortgage interest rates fluctuate consistently, but moved down for a long time helping drive up the costs of homes.
 
-5. There are strong positive correlations between home prices and income, and building permits issued. There is a medium negative correlation between interest rates and home prices, but a strong correlation between interest rates and building permits.
+
 
 ## Prophet
 
