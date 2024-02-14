@@ -8,7 +8,7 @@ import matplotlib.dates as mdates
 from pathlib import Path
 
 ## Note Ryan's data will need to be merged to main and put in Resources for this code to work
-median_house_price_path = Path("Resources/UTUCSFRCONDOSMSAMID.csv")
+median_house_price_path = Path("Resources/Median Home Pricing.csv")
 median_house_price_df = pd.read_csv(median_house_price_path, parse_dates=True)
 
 # Clean/organize data by:
@@ -35,4 +35,4 @@ med_house_ax.set_ylabel("Home Prices in Thousands")
 med_house_ax.xaxis.set_major_locator(mdates.YearLocator(2))
 med_house_ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y"))
 med_house_ax.legend()
-plt.savefig(Path("Output/Median_Home_Price_Increase.png"))
+plt.savefig(Path("Presentation Slide References/Median_Home_Price_Increase.png"))
