@@ -41,6 +41,10 @@ price_vs_income_axb.plot(price_vs_income_df.index,
          color="darkorange",  label="Household Income (USD)")
 price_vs_income_axb.set_ylabel("Household Income in Thouands $ (USD)", color="darkorange")
 price_vs_income_axb.tick_params(axis="y", labelcolor="darkorange")
+# combine legends into one
+lines1, labels1 = price_vs_income_axa.get_legend_handles_labels()
+lines2, labels2 = price_vs_income_axb.get_legend_handles_labels()
+price_vs_income_axa.legend(lines1 + lines2, labels1 + labels2)
 # and save plot
 plt.savefig(Path("Output/Home_Prices_and_Household_Income_Overlaid.png"))
 
