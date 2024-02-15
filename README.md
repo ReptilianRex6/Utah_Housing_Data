@@ -103,18 +103,27 @@ This led us to want to calculate just how much of a disparity there was. Given t
 
 In the end we also wanted to look at the raw correlations between all the data points in question.
 
-![Correlation_Table](https://github.com/ReptilianRex6/Utah_Housing_Data/blob/main/Presentation%20Slide%20References/Correlation_Table.png)
+![Correlation Table](https://github.com/ReptilianRex6/Utah_Housing_Data/blob/main/Presentation%20Slide%20References/Correlation_Table.png)
 
-
+From these data points we can answer:
+1. The average price of a home in Utah has increased over time. More significantly in the past few years.
 
 2. The average income of Utah households has also increased over time.
 
-
+3. Utah is a steadily growing state.
 
 4. Mortgage interest rates fluctuate consistently, but moved down for a long time helping drive up the costs of homes.
 
-
+5. There are strong positive correlations between home prices and income, and building permits issued. There is a medium negative correlation between interest rates and home prices, but a strong correlation between interest rates and building permits.
 
 ## Prophet
 
 We also used the Prophet Python package with the data ending in 2022 to predict the future in 2023 and compared it to the real data to see how well Prophet predicts the future.
+
+Our “prophecy” for the population of Utah predicted that in 2022 the population would be 3,389,568. The actual population measured in 2022 was 3,380,800. A difference of .2%! Our model predicts that the population in 2026 will be 3.63 Million!
+
+![Prophet Prediction for Population](https://github.com/ReptilianRex6/Utah_Housing_Data/blob/main/Presentation%20Slide%20References/Utah%20Population%20Prophecy.png)
+
+Our “prophecy” for Mortgage Rates predicted a rate of 4.33% in Feb 2024. Calculated Mean Average Error was ~1.29%.
+
+![Prophet Prediction for Mortgage Rates](https://github.com/ReptilianRex6/Utah_Housing_Data/blob/main/Presentation%20Slide%20References/Mortage%20Rate%20Prophecy.png)
